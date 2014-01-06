@@ -20,5 +20,6 @@ $ npm install grunt
 
 ## References
 * [Grunt - Getting Started](http://gruntjs.com/getting-started)
+* [Sample Gruntfile](http://gruntjs.com/sample-gruntfile)
 * [Tutorial - Grunt - TheBasics](https://github.com/CaryLandholt/Tutorial-Grunt-TheBasics)
 * [GruntJS Workflow](http://merrickchristensen.com/articles/gruntjs-workflow.html)
