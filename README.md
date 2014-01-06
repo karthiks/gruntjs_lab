@@ -13,7 +13,14 @@ Play field to getting familiar with GruntJS framework
 * Local (Project level) installation of GruntJS using the command:
 ```bash
 $ npm install grunt
+$ npm install grunt-cli
 ```
+
+## Grunt-plugins installed and used in this project
+* [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+* [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
+* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
+* [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 
 ## Contributors
 * [Karthik Sirasanagandla](https://github.com/karthiks/)
