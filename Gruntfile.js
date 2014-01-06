@@ -30,6 +30,18 @@ module.exports = function(grunt) {
       }
     },
 
+	//Grunt-concat-plugin for files concatination task
+	concat: {
+	  options: {
+	    // define a string to put between each file in the concatenated output
+	    //separator: '/*********/'
+	  },
+	  dist: {
+	    src: 'src/calculator/*.js',
+	    dest: 'src/calculator/calculator.concat.js'
+	  }
+	},
+
     //Grunt-Uglify-Plugin for minification task
     uglify: {
       options: {
@@ -45,6 +57,7 @@ module.exports = function(grunt) {
 
   // We have to load in the Grunt plugins we need
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task.
