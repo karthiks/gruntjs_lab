@@ -32,19 +32,20 @@ module.exports = function(grunt) {
 
     //Grunt-Uglify-Plugin for minification task
     uglify: {
+      options: {
+	    // the banner is inserted at the top of the output
+	    banner: '/* Project: <%= pkg.name %> | This file is generated using grunt-uglifier plugin on <%= grunt.template.today("dd-mm-yyyy") %>. */'
+      },
       dist: {
-        src: 'src/calculator/*.js',
+        src: ['<banner>', 'src/calculator/*.js'],
         dest: 'src/calculator/calculator.min.js'
       }
     }
   });
 
-  // Load JSHint task
+  // We have to load in the Grunt plugins we need
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  //grunt.loadNpmTasks(['grunt-contrib-jshint','grunt-contrib-uglify']);
-
-
 
   // Default task.
   // You can configure Grunt to run one or more tasks by default by defining a default task.
