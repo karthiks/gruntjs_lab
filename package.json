@@ -1,0 +1,15 @@
+{
+  "name": "gruntjs_lab",
+  "version": "0.1.0",
+  "description": "Getting Started with GruntJS",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "keywords": [
+    "javascript",
+    "gruntjs"
+  ],
+  "author": "karthik sirasanagandla",
+  "license": "BSD"
+}
