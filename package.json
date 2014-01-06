@@ -12,9 +12,14 @@
   ],
   "author": "karthik sirasanagandla",
   "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karthiks/gruntjs_lab"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-cli": "~0.1.11",
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.2.7"
   }
 }

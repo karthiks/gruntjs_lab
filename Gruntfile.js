@@ -28,12 +28,26 @@ module.exports = function(grunt) {
           it: true
         }
       }
+    },
+
+    //Grunt-Uglify-Plugin for minification task
+    uglify: {
+      dist: {
+        src: 'src/calculator/*.js',
+        dest: 'src/calculator/calculator.min.js'
+      }
     }
   });
 
   // Load JSHint task
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  //grunt.loadNpmTasks(['grunt-contrib-jshint','grunt-contrib-uglify']);
+
+
 
   // Default task.
-  grunt.registerTask('default', 'jshint');
+  // You can configure Grunt to run one or more tasks by default by defining a default task.
+  // When running more than one task as default, make the 2nd parameter as array.
+  grunt.registerTask('default', ['jshint', 'uglify']);
 };
